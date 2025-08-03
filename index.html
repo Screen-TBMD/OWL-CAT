@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>دي لعبة</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background: linear-gradient(180deg, #0b0b0c, #1c1c1e);
+      color: #f0f0f0;
+      font-family: 'Cairo', sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+    header {
+      background-color: #121212;
+      padding: 30px 20px;
+      text-align: center;
+      border-bottom: 1px solid #333;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    }
+    header h1 {
+      font-size: 2.5em;
+      color: #ffffff;
+      letter-spacing: 2px;
+      animation: fadeIn 2s ease-in-out;
+    }
+    nav {
+      background-color: #181818;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px 10px;
+      border-bottom: 1px solid #333;
+    }
+    nav a {
+      color: #aaa;
+      text-decoration: none;
+      font-size: 1.1em;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #ffcc70;
+    }
+    main {
+      flex-grow: 1;
+      padding: 60px 20px;
+      text-align: center;
+      animation: fadeInUp 1.5s ease;
+    }
+    main h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #e2e2e2;
+    }
+    main p {
+      font-size: 1.2em;
+      color: #ccc;
+      margin-bottom: 40px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .cat-img {
+      max-width: 350px;
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.08);
+      transition: transform 0.5s ease;
+    }
+    .cat-img:hover {
+      transform: scale(1.05) rotate(1deg);
+    }
+    .cta-button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 30px;
+      background-color: #ffcc70;
+      color: #000;
+      border: none;
+      border-radius: 25px;
+      font-weight: bold;
+      font-size: 1.1em;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    .cta-button:hover {
+      background-color: #ffaa33;
+    }
+    footer {
+      background-color: #121212;
+      text-align: center;
+      padding: 20px;
+      color: #888;
+      font-size: 0.9em;
+      border-top: 1px solid #333;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .background-glow {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(255, 204, 112, 0.1) 0%, transparent 80%);
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+      z-index: 0;
+    }
+  .about-section {
+  margin-top: 60px;
+  background-color: #1a1a1c;
+  padding: 40px 20px;
+  border-radius: 12px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 20px rgba(255, 204, 112, 0.05);
+  animation: fadeInUp 2s ease;
+}
+.about-section h3 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  color: #ffcc70;
+}
+.about-section p {
+  font-size: 1.1em;
+  color: #ccc;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+  </style>
+</head>
+<body>
+  <div class="background-glow"></div>
+  <header>
+    <h1>دي لعبة - OWL CAT</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">الرئيسية</a>
+    <a href="download.html">تحميل</a>
+  </nav>
+
+    <section class="about-section">
+  <h3>✦ عن اللعبة</h3>
+  <p>
+    OWL CAT ليست مجرد لعبة.<br>
+    هي تجربة تضعك في موقف بسيط ظاهريًا، لكن كل قرار، كل نظرة... قد يكون له معنى.
+  </p>
+  <p>
+    صممت اللعبة لتكون قصيرة، غامضة، ومليئة بالتفاصيل التي قد لا تراها من أول مرة.<br>
+    الهدف ليس فقط اللعب... بل الملاحظة.
+  </p>
+</section>
+  
+  <main>
+    <h2>قطة... أو شيء أبعد من هاذا؟</h2>
+    <p>أربعة أيام فقط... وقطة تقول إنها عادية. لكن الحقيقة، مخفية في العتمة. لا أحد يعرف ماذا سيحدث إن تجاهلت النظرة...</p>
+    
+
+    
+    <img class="cat-img" src="https://raw.githubusercontent.com/Screen-TBMD/OWL-CAT/refs/heads/main/98026f26a48fbd15aec1c6f4788e558f.jpg" alt="صورة القطة">
+    <br>
+    <a href="download.html" class="cta-button">تحميل اللعبة</a>
+  </main>
+
+  <footer>
+    &copy; 2025 جميع الحقوق محفوظة.
+  </footer>
+</body>
+</html>
